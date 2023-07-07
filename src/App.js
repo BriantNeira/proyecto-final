@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import Login from './components/Login';
 import { useAuth0 } from '@auth0/auth0-react';
 import Profile from './components/Profile';
@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        
         {
           isAuthenticated ? (
             <>
