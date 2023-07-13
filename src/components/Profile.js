@@ -11,7 +11,7 @@ if(isLoading){
     isAuthenticated && (
         <div>
            <img src={user.picture} alt={user.name}/>
-           <h2> {user.name}</h2>
+           <h3> {user.name}</h3>
            <p>Correo electrónico: {user.email}</p>
         </div>
     )
