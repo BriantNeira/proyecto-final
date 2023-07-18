@@ -7,6 +7,6 @@ const login = (user)=>{
 
 const logout = ()=>{
     return {
-        type:'LOGOUT'
+        type:'LOGOUT',
     }
 }
