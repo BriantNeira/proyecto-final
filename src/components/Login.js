@@ -1,7 +1,7 @@
 import {useAuth0 } from '@auth0/auth0-react';
 import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-import {login} from '../actions/userActions';
+import {login} from './actions/userActions';
 
 export const Login = () => {
     const { loginWithRedirect, isAuthenticated, user, isLoading } =  useAuth0();
@@ -13,15 +13,17 @@ export const Login = () => {
             console.log(error);
         }
     };
-    useEffect(()=>{
-       if(isAuthenticated && user){
-        dispatch(login(user))};  
-    }, [isAuthenticated, user, dispatch]);
+    useEffect(() => {
+        if (isAuthenticated && user) {
+          dispatch(login(user));
+        }
+      }, [isAuthenticated, user, dispatch]);
 
     if(isLoading){
         return <div> Cargando...</div>
     }
    
-    return <button onClick={handleLogin()}>Login</button>;
+    return <button className="btn btn-orange" onClick={handleLogin}>Login</button>;
+
     
 };

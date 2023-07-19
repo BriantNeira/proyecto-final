@@ -1,4 +1,5 @@
 //import logo from './logo.svg';
+import './App.css';
 import {Login} from './components/Login';
 import { useAuth0 } from '@auth0/auth0-react';
 import Profile from './components/Profile';

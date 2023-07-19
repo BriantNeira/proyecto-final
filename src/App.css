@@ -1,0 +1,40 @@
+/* App.css */
+
+.App-header {
+    background-color: #8ca9e2;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para el encabezado */
+    border-radius: 5px; /* Bordes redondeados */
+  }
+  
+  .menu-item {
+    color: white;
+    padding: 10px 20px; /* Padding más grande */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Transición suave */
+    border-radius: 5px; /* Bordes redondeados */
+  }
+  
+  .menu-item:hover {
+    background-color: #ff5500;
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el cursor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra al pasar el cursor */
+  }
+  
+  /* Estilo para botones de Bootstrap */
+  .btn-orange {
+    background-color: #ff7f00;
+    color: white;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .btn-orange:hover {
+    background-color: #ff5500;
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
