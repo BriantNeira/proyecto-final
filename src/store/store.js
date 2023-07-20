@@ -1,10 +1,9 @@
-import { configureStore } from "@reduxjs/toolkit";
+import {configureStore} from "@reduxjs/toolkit";
 import authReducer from "../reducers/authReducer";
+import celReducer from "../reducers/slices/celebritySlices"
 
-const store = configureStore({
+export default configureStore ({
     reducer: {
-      auth: authReducer
-    }
-  });
-  
-  export default store;
+        auth: authReducer,
+        cel: celReducer
+}})
